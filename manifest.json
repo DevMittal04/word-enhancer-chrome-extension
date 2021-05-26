@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Rainbow Glory",
+    "version": "0.1.0",
+    "description": "This extension glorifies the word 'Rainbow'",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["script.js"],
+            "css": ["styles.css"] 
+        }
+    ],
+    "icons": {
+        "128": "images/rainbow128.png",
+        "48": "images/rainbow48.png" 
+    },
+    "browser_action": {
+        "default_icon": "images/rainbow48.png"
+    }
+}
